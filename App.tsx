@@ -20,6 +20,9 @@ export default function App() {
       `}</style>
 
       <div className="min-h-screen bg-[#FBFAFD] text-slate-800 p-6 relative">
+        <p style={{ color: "black", fontSize: "20px" }}>
+  If you can read this, React is working.
+</p>
         <header className="w-screen py-6 px-6 bg-[#9D8DEB] shadow-sm flex items-center justify-center relative left-1/2 right-1/2 -mx-[50vw]">
           <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-center">
             Universal Psychological Services
