@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function UPS_MainMenuIntro() {
+export default function App() {
   const [currentPage, setCurrentPage] = useState<'home' | 'services'>('home');
   const [menuOpen, setMenuOpen] = useState(false);
 
