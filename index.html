@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Universal Psychological Services</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -42,8 +42,8 @@
       position: absolute;
       right: 0;
       background: white;
-      border-radius: 18px;
-      box-shadow: 0 14px 32px rgba(0,0,0,0.08);
+      border-radius: 14px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
       margin-top: 10px;
       overflow: hidden;
       min-width: 260px;
@@ -51,7 +51,7 @@
 
     .dropdown a {
       display: block;
-      padding: 16px 24px;
+      padding: 14px 22px;
       text-decoration: none;
       color: #1e293b;
       font-weight: 600;
@@ -59,89 +59,80 @@
     }
 
     .dropdown a:hover {
-      background: #f5f6fa;
+      background: #f1f5f9;
     }
 
-    /* HERO */
+    section {
+      max-width: 950px;
+      margin: 3rem auto;
+      padding: 2.5rem;
+      border-radius: 26px;
+    }
+
     .hero {
-      max-width: 900px;
-      margin: 3rem auto 4rem;
-      padding: 3.2rem;
       background: #9DC7F4;
-      border-radius: 40px;
       text-align: center;
     }
 
-    .hero h2 {
-      font-size: 2.1rem;
-      font-weight: 800;
-    }
-
-    .hero p {
-      font-weight: 600;
-      font-size: 1.1rem;
-      line-height: 1.7;
-    }
-
-    /* BUBBLE LAYOUT */
-    .bubble-space {
-      max-width: 1100px;
-      margin: 0 auto 5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-    }
-
-    .bubble-row {
-      display: flex;
-      gap: 2.5rem;
-      flex-wrap: wrap;
-      align-items: stretch;
-      justify-content: center;
-    }
-
-    .bubble {
-      padding: 2.8rem 3rem;
-      border-radius: 48px;
-      box-shadow: 0 20px 42px rgba(0,0,0,0.06);
-      line-height: 1.7;
-    }
-
-    .bubble h2,
-    .bubble h3 {
-      font-weight: 800;
-      margin-bottom: 1rem;
-      font-size: 1.4rem;
-    }
-
-    .bubble p {
-      font-weight: 600;
-      font-size: 1.1rem;
-    }
-
-    /* PERSONALITY */
-    .approach {
+    .appointment {
       background: #F3F4FF;
-      flex: 2;
-      min-width: 320px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
     }
 
-    .personal {
+    .appointment h2 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-top: 0;
+    }
+
+    .appointment p {
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      border: 1px solid #cbd5e1;
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+
+    form button {
+      background: #9D8DEB;
+      color: white;
+      font-weight: 700;
+      border: none;
+      padding: 14px;
+      border-radius: 14px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    form button:hover {
+      background: #8b7fe0;
+    }
+
+    .footer-info {
       background: #EAF7F3;
-      flex: 1;
-      min-width: 280px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      font-weight: 600;
     }
 
-    .help {
-      background: #FFF4EC;
-      flex: 1.2;
-      min-width: 300px;
+    .footer-info h3 {
+      margin-top: 0;
+      font-weight: 800;
     }
 
-    .guidance {
-      background: #F1EDFF;
-      flex: 1.8;
-      min-width: 320px;
+    @media (max-width: 800px) {
+      .appointment {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -168,50 +159,50 @@
   <h2>Where You Matter.</h2>
   <p><strong>Private – Professional – Personal</strong></p>
   <p>
-    Universal Psychological Services offers thoughtful, individualized care
-    in a calm and supportive environment — centered on dignity, trust, and understanding.
+    Welcome to Universal Psychological Services, where each client matters.
+    We value and provide unique therapeutic experiences for all.
   </p>
 </section>
 
-<section class="bubble-space">
-
-  <div class="bubble-row">
-    <div class="bubble approach">
-      <h2>Our Approach</h2>
-      <p>
-        Therapy should feel human — not cold, rushed, or procedural.
-        Our work is grounded in evidence-based practice while honoring
-        each individual’s lived experience, values, and pace.
-      </p>
-    </div>
-
-    <div class="bubble personal">
-      <h3>Personalized Care</h3>
-      <p>
-        No two individuals are the same. Care is tailored with intention,
-        respect, and clarity.
-      </p>
-    </div>
+<section class="appointment">
+  <div>
+    <h2>Book an Appointment Now!</h2>
+    <p>Make a booking with our online form:</p>
   </div>
 
-  <div class="bubble-row">
-    <div class="bubble help">
-      <h3>How We Help</h3>
-      <p>
-        We support children, adolescents, and adults navigating mental health,
-        learning, behavioral, and emotional concerns.
-      </p>
-    </div>
+  <form
+    action="mailto:naharahake@gmail.com"
+    method="POST"
+    enctype="text/plain"
+  >
+    <input type="text" name="First Name" placeholder="First Name" required>
+    <input type="text" name="Last Name" placeholder="Last Name" required>
+    <input type="email" name="Email" placeholder="Email" required>
+    <input type="tel" name="Phone Number" placeholder="Phone Number">
+    <textarea name="Message" placeholder="Optional Message"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
 
-    <div class="bubble guidance">
-      <h3>Next Steps</h3>
-      <p>
-        You’re welcome to explore our services or reach out with questions.
-        We’re here to help guide you forward — thoughtfully and collaboratively.
-      </p>
-    </div>
-  </div>
+<section class="footer-info">
+  <h3>Open Hours</h3>
+  Mon–Fri: 9 AM – 6 PM<br>
+  Saturday: 9 AM – 4 PM<br>
+  Sunday: Closed
 
+  <h3>Locations</h3>
+  2575 Eastern Boulevard, Suites 204 & 212 – York, PA 17402<br>
+  924 Colonial Avenue, Bldg. N – York, PA 17403<br>
+  2217 Carlisle Road, Suite 400 – York, PA 17408
+
+  <h3>Get in Touch</h3>
+  Telephone: (717) 894-0523<br>
+  Email: psy@psyservicesofyork.org
+
+  <h3>Client Portal</h3>
+  <a href="https://www.therapyportal.com/p/psychservices17406/login/" target="_blank">
+    Sign into your client portal for updates or scheduling
+  </a>
 </section>
 
 <script>
