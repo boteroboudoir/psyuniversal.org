@@ -20,6 +20,45 @@
       text-align: center;
       font-weight: 800;
       font-size: 2.5rem;
+      position: relative;
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    nav button {
+      background: transparent;
+      border: none;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      right: 0;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      margin-top: 8px;
+      overflow: hidden;
+      min-width: 180px;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 12px 16px;
+      text-decoration: none;
+      color: #1e293b;
+      font-weight: 600;
+    }
+
+    .dropdown a:hover {
+      background: #f1f5f9;
     }
 
     section {
@@ -33,13 +72,6 @@
       background: #9DC7F4;
       text-align: center;
     }
-
-    .services div {
-      margin-bottom: 1.5rem;
-      padding: 1.5rem;
-      border-radius: 16px;
-      font-weight: 600;
-    }
   </style>
 </head>
 
@@ -47,6 +79,18 @@
 
 <header>
   Universal Psychological Services
+
+  <nav>
+    <button onclick="toggleMenu()">Menu ▾</button>
+    <div id="dropdown" class="dropdown">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="#">Meet Our Staff</a>
+      <a href="#">FAQ</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
 </header>
 
 <section class="hero">
@@ -58,18 +102,14 @@
   </p>
 </section>
 
-<div id="services" style="display:none;">
-  <section class="services">
-    <h2>Our Services</h2>
-
-  <div style="background:#FADADD;">Drug and Alcohol Abuse</div>
-  <div style="background:#E6F4F1;">Parent–School Consultation</div>
-  <div style="background:#FFF1C1;">Executive Function Coaching</div>
-  <div style="background:#E9E4FF;">Psychological Evaluations</div>
-  <div style="background:#EAF7D9;">Neuropsychological Evaluations</div>
-  <div style="background:#FFE6F2;">Forensic Evaluations</div>
-  </section>
-</div>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("dropdown");
+    menu.style.display = menu.style.display === "block" ? "none" : "block";
+  }
+</script>
 
 </body>
+</html>
+
 </html>
