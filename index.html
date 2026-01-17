@@ -62,7 +62,6 @@
       background: #f1f5f9;
     }
 
-    /* WIDER BUBBLES */
     section {
       max-width: 1150px;
       margin: 3rem auto;
@@ -75,17 +74,19 @@
       text-align: center;
     }
 
-    /* THICKER HERO TEXT */
     .hero h2 {
       font-weight: 800;
       font-size: 2.6rem;
-      letter-spacing: 0.02em;
       margin-top: 0;
     }
 
+    /* BOLDER WELCOME TEXT */
     .hero p {
-      font-weight: 600;
-      font-size: 1.1rem;
+      font-weight: 700;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 0.75rem auto;
     }
 
     .appointment {
@@ -132,21 +133,28 @@
       background: #8b7fe0;
     }
 
-    /* EXTRA-WIDE FOOTER BUBBLE */
+    /* CENTERED, MEDICAL-STYLE FOOTER INFO */
     .footer-info {
       background: #EAF7F3;
       font-size: 1rem;
-      line-height: 1.7;
+      line-height: 1.8;
       font-weight: 600;
       max-width: 95%;
       margin: 4rem auto 0;
       padding: 3.5rem 4.5rem;
       border-radius: 34px;
+      text-align: center;
     }
 
     .footer-info h3 {
-      margin-top: 1.5rem;
+      margin-top: 2rem;
       font-weight: 800;
+    }
+
+    .footer-info a {
+      color: #1e293b;
+      font-weight: 700;
+      text-decoration: underline;
     }
 
     @media (max-width: 800px) {
@@ -198,11 +206,7 @@
     <p>Make a booking with our online form:</p>
   </div>
 
-  <form
-    action="mailto:naharahake@gmail.com"
-    method="POST"
-    enctype="text/plain"
-  >
+  <form action="mailto:naharahake@gmail.com" method="POST" enctype="text/plain">
     <input type="text" name="First Name" placeholder="First Name" required>
     <input type="text" name="Last Name" placeholder="Last Name" required>
     <input type="email" name="Email" placeholder="Email" required>
@@ -219,9 +223,14 @@
   Sunday: Closed
 
   <h3>Locations</h3>
-  2575 Eastern Boulevard, Suites 204 & 212 – York, PA 17402<br>
-  924 Colonial Avenue, Bldg. N – York, PA 17403<br>
-  2217 Carlisle Road, Suite 400 – York, PA 17408
+  2575 Eastern Boulevard, Suites 204 & 212<br>
+  York, PA 17402<br><br>
+
+  924 Colonial Avenue, Bldg. N<br>
+  York, PA 17403<br><br>
+
+  2217 Carlisle Road, Suite 400<br>
+  York, PA 17408
 
   <h3>Get in Touch</h3>
   Telephone: (717) 894-0523<br>
