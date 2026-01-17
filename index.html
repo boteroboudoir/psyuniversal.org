@@ -62,11 +62,12 @@
       background: #f1f5f9;
     }
 
+    /* WIDER BUBBLES */
     section {
-      max-width: 950px;
+      max-width: 1150px;
       margin: 3rem auto;
-      padding: 2.5rem;
-      border-radius: 26px;
+      padding: 3rem 3.5rem;
+      border-radius: 30px;
     }
 
     .hero {
@@ -74,32 +75,46 @@
       text-align: center;
     }
 
+    /* THICKER HERO TEXT */
+    .hero h2 {
+      font-weight: 800;
+      font-size: 2.6rem;
+      letter-spacing: 0.02em;
+      margin-top: 0;
+    }
+
+    .hero p {
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
     .appointment {
       background: #F3F4FF;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      gap: 2.5rem;
     }
 
     .appointment h2 {
-      font-size: 2rem;
+      font-size: 2.1rem;
       font-weight: 800;
       margin-top: 0;
     }
 
     .appointment p {
       font-weight: 700;
-      font-size: 1.05rem;
+      font-size: 1.1rem;
     }
 
-    form input, form textarea {
+    form input,
+    form textarea {
       width: 100%;
-      padding: 12px 14px;
-      margin-bottom: 12px;
-      border-radius: 12px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+      border-radius: 14px;
       border: 1px solid #cbd5e1;
       font-family: inherit;
-      font-size: 0.95rem;
+      font-size: 1rem;
     }
 
     form button {
@@ -107,31 +122,44 @@
       color: white;
       font-weight: 700;
       border: none;
-      padding: 14px;
-      border-radius: 14px;
+      padding: 16px;
+      border-radius: 16px;
       cursor: pointer;
-      font-size: 1rem;
+      font-size: 1.05rem;
     }
 
     form button:hover {
       background: #8b7fe0;
     }
 
+    /* EXTRA-WIDE FOOTER BUBBLE */
     .footer-info {
       background: #EAF7F3;
-      font-size: 0.95rem;
-      line-height: 1.6;
+      font-size: 1rem;
+      line-height: 1.7;
       font-weight: 600;
+      max-width: 95%;
+      margin: 4rem auto 0;
+      padding: 3.5rem 4.5rem;
+      border-radius: 34px;
     }
 
     .footer-info h3 {
-      margin-top: 0;
+      margin-top: 1.5rem;
       font-weight: 800;
     }
 
     @media (max-width: 800px) {
       .appointment {
         grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 2.5rem;
+      }
+
+      .footer-info {
+        padding: 3rem 2.5rem;
       }
     }
   </style>
