@@ -65,8 +65,8 @@
     section {
       max-width: 900px;
       margin: 3rem auto;
-      padding: 2rem;
-      border-radius: 20px;
+      padding: 2.5rem;
+      border-radius: 22px;
     }
 
     .hero {
@@ -74,12 +74,47 @@
       text-align: center;
     }
 
-    .approach {
-      background: #F3F4FF;
+    /* --- Floating Intro Layout --- */
+
+    .intro-layout {
+      max-width: 1000px;
+      margin: 4rem auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
     }
 
-    .help {
+    .panel {
+      padding: 2.5rem;
+      border-radius: 22px;
+    }
+
+    .panel h2 {
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .panel h3 {
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+    }
+
+    .panel p {
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    .panel.wide {
+      background: #F3F4FF;
+      grid-column: 1 / span 2;
+    }
+
+    .panel.narrow {
       background: #EAF7F3;
+    }
+
+    .panel.soft {
+      background: #FFF4EC;
     }
   </style>
 </head>
@@ -111,29 +146,40 @@
   </p>
 </section>
 
-<section class="approach">
-  <h2>Our Approach</h2>
-  <p>
-    Universal Psychological Services provides compassionate, evidence-based
-    care tailored to the individual. We believe therapy should feel personal,
-    respectful, and empowering.
-  </p>
-  <p>
-    Our clinicians work collaboratively with clients, families, and institutions
-    to support emotional growth, clarity, and long-term well-being.
-  </p>
-</section>
+<section class="intro-layout">
 
-<section class="help">
-  <h2>How We Help</h2>
-  <p>
-    We support individuals across the lifespan with concerns related to mental
-    health, learning, behavior, and emotional regulation.
-  </p>
-  <p>
-    Detailed information about our services can be found in the Services section
-    of the menu above.
-  </p>
+  <div class="panel wide">
+    <h2>Our Approach</h2>
+    <p>
+      Universal Psychological Services provides compassionate, evidence-based care
+      tailored to the individual. Therapy should feel personal, respectful,
+      and empowering.
+    </p>
+    <p>
+      Our clinicians work collaboratively with clients, families, and institutions
+      to support emotional clarity, growth, and long-term well-being.
+    </p>
+  </div>
+
+  <div class="panel narrow">
+    <h3>Personalized Care</h3>
+    <p>
+      Each client’s needs are unique. We thoughtfully adapt assessment and
+      treatment to support meaningful and lasting outcomes.
+    </p>
+  </div>
+
+  <div class="panel soft">
+    <h3>How We Help</h3>
+    <p>
+      We support individuals across the lifespan with concerns related to mental
+      health, learning, behavior, and emotional regulation.
+    </p>
+    <p>
+      Detailed information about our services can be found in the Services section.
+    </p>
+  </div>
+
 </section>
 
 <script>
@@ -142,9 +188,6 @@
     menu.style.display = menu.style.display === "block" ? "none" : "block";
   }
 </script>
-
-</body>
-</html>
 
 </body>
 </html>
