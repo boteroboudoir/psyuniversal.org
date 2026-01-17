@@ -42,8 +42,8 @@
       position: absolute;
       right: 0;
       background: white;
-      border-radius: 14px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
       margin-top: 10px;
       overflow: hidden;
       min-width: 260px;
@@ -51,7 +51,7 @@
 
     .dropdown a {
       display: block;
-      padding: 14px 22px;
+      padding: 16px 24px;
       text-decoration: none;
       color: #1e293b;
       font-weight: 600;
@@ -59,62 +59,66 @@
     }
 
     .dropdown a:hover {
-      background: #f1f5f9;
+      background: #f5f6fa;
     }
 
-    section {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 2.5rem;
-      border-radius: 22px;
-    }
-
+    /* Hero stays grounding */
     .hero {
+      max-width: 900px;
+      margin: 3rem auto 4rem;
+      padding: 3rem;
       background: #9DC7F4;
+      border-radius: 36px;
       text-align: center;
     }
 
-    /* --- Floating Intro Layout --- */
-
-    .intro-layout {
-      max-width: 1000px;
-      margin: 4rem auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 2rem;
+    /* Bubble layout */
+    .bubble-space {
+      max-width: 1100px;
+      margin: 0 auto 5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2.5rem;
+      justify-content: center;
     }
 
-    .panel {
-      padding: 2.5rem;
-      border-radius: 22px;
+    .bubble {
+      padding: 2.5rem 2.8rem;
+      border-radius: 48px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+      line-height: 1.65;
     }
 
-    .panel h2 {
+    .bubble h2,
+    .bubble h3 {
       font-weight: 800;
       margin-bottom: 1rem;
     }
 
-    .panel h3 {
-      font-weight: 700;
-      margin-bottom: 0.8rem;
-    }
-
-    .panel p {
+    .bubble p {
       font-weight: 500;
-      line-height: 1.6;
+      font-size: 1.05rem;
     }
 
-    .panel.wide {
+    /* Individual bubble personalities */
+    .bubble.approach {
       background: #F3F4FF;
-      grid-column: 1 / span 2;
+      max-width: 720px;
     }
 
-    .panel.narrow {
+    .bubble.personal {
       background: #EAF7F3;
+      max-width: 420px;
     }
 
-    .panel.soft {
+    .bubble.help {
       background: #FFF4EC;
+      max-width: 520px;
+    }
+
+    .bubble.guidance {
+      background: #F1EDFF;
+      max-width: 380px;
     }
   </style>
 </head>
@@ -142,41 +146,45 @@
   <p><strong>Private – Professional – Personal</strong></p>
   <p>
     Welcome to Universal Psychological Services, where each client matters.
-    We value and provide unique therapeutic experiences for all.
+    We provide thoughtful, individualized care in a calm and supportive environment.
   </p>
 </section>
 
-<section class="intro-layout">
+<section class="bubble-space">
 
-  <div class="panel wide">
+  <div class="bubble approach">
     <h2>Our Approach</h2>
     <p>
-      Universal Psychological Services provides compassionate, evidence-based care
-      tailored to the individual. Therapy should feel personal, respectful,
-      and empowering.
+      We believe therapy should feel human — not clinical, rushed, or impersonal.
+      Our work is grounded in evidence-based practice while honoring each client’s
+      lived experience, values, and pace.
     </p>
     <p>
-      Our clinicians work collaboratively with clients, families, and institutions
-      to support emotional clarity, growth, and long-term well-being.
+      Collaboration, respect, and trust guide every step of the process.
     </p>
   </div>
 
-  <div class="panel narrow">
+  <div class="bubble personal">
     <h3>Personalized Care</h3>
     <p>
-      Each client’s needs are unique. We thoughtfully adapt assessment and
-      treatment to support meaningful and lasting outcomes.
+      No two individuals are the same. Treatment and assessment are carefully
+      tailored to meet your specific needs and goals.
     </p>
   </div>
 
-  <div class="panel soft">
+  <div class="bubble help">
     <h3>How We Help</h3>
     <p>
-      We support individuals across the lifespan with concerns related to mental
-      health, learning, behavior, and emotional regulation.
+      We support children, adolescents, and adults with concerns related to
+      mental health, learning, behavior, and emotional regulation.
     </p>
+  </div>
+
+  <div class="bubble guidance">
+    <h3>Next Steps</h3>
     <p>
-      Detailed information about our services can be found in the Services section.
+      You’re invited to explore our services or reach out with questions.
+      We’re here to help guide you forward.
     </p>
   </div>
 
