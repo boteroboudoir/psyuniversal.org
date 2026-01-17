@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Universal Psychological Services</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -43,7 +43,7 @@
       right: 0;
       background: white;
       border-radius: 18px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+      box-shadow: 0 14px 32px rgba(0,0,0,0.08);
       margin-top: 10px;
       overflow: hidden;
       min-width: 260px;
@@ -62,63 +62,86 @@
       background: #f5f6fa;
     }
 
-    /* Hero stays grounding */
+    /* HERO */
     .hero {
       max-width: 900px;
       margin: 3rem auto 4rem;
-      padding: 3rem;
+      padding: 3.2rem;
       background: #9DC7F4;
-      border-radius: 36px;
+      border-radius: 40px;
       text-align: center;
     }
 
-    /* Bubble layout */
+    .hero h2 {
+      font-size: 2.1rem;
+      font-weight: 800;
+    }
+
+    .hero p {
+      font-weight: 600;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    /* BUBBLE LAYOUT */
     .bubble-space {
       max-width: 1100px;
       margin: 0 auto 5rem;
       display: flex;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    .bubble-row {
+      display: flex;
       gap: 2.5rem;
+      flex-wrap: wrap;
+      align-items: stretch;
       justify-content: center;
     }
 
     .bubble {
-      padding: 2.5rem 2.8rem;
+      padding: 2.8rem 3rem;
       border-radius: 48px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
-      line-height: 1.65;
+      box-shadow: 0 20px 42px rgba(0,0,0,0.06);
+      line-height: 1.7;
     }
 
     .bubble h2,
     .bubble h3 {
       font-weight: 800;
       margin-bottom: 1rem;
+      font-size: 1.4rem;
     }
 
     .bubble p {
-      font-weight: 500;
-      font-size: 1.05rem;
+      font-weight: 600;
+      font-size: 1.1rem;
     }
 
-    /* Individual bubble personalities */
-    .bubble.approach {
+    /* PERSONALITY */
+    .approach {
       background: #F3F4FF;
-      max-width: 720px;
+      flex: 2;
+      min-width: 320px;
     }
 
-    .bubble.personal {
+    .personal {
       background: #EAF7F3;
-      max-width: 420px;
+      flex: 1;
+      min-width: 280px;
     }
 
-    .bubble.help {
+    .help {
       background: #FFF4EC;
-      max-width: 520px;
+      flex: 1.2;
+      min-width: 300px;
     }
 
-    .bubble.guidance {
+    .guidance {
       background: #F1EDFF;
-      max-width: 380px;
+      flex: 1.8;
+      min-width: 320px;
     }
   </style>
 </head>
@@ -145,47 +168,48 @@
   <h2>Where You Matter.</h2>
   <p><strong>Private – Professional – Personal</strong></p>
   <p>
-    Welcome to Universal Psychological Services, where each client matters.
-    We provide thoughtful, individualized care in a calm and supportive environment.
+    Universal Psychological Services offers thoughtful, individualized care
+    in a calm and supportive environment — centered on dignity, trust, and understanding.
   </p>
 </section>
 
 <section class="bubble-space">
 
-  <div class="bubble approach">
-    <h2>Our Approach</h2>
-    <p>
-      We believe therapy should feel human — not clinical, rushed, or impersonal.
-      Our work is grounded in evidence-based practice while honoring each client’s
-      lived experience, values, and pace.
-    </p>
-    <p>
-      Collaboration, respect, and trust guide every step of the process.
-    </p>
+  <div class="bubble-row">
+    <div class="bubble approach">
+      <h2>Our Approach</h2>
+      <p>
+        Therapy should feel human — not cold, rushed, or procedural.
+        Our work is grounded in evidence-based practice while honoring
+        each individual’s lived experience, values, and pace.
+      </p>
+    </div>
+
+    <div class="bubble personal">
+      <h3>Personalized Care</h3>
+      <p>
+        No two individuals are the same. Care is tailored with intention,
+        respect, and clarity.
+      </p>
+    </div>
   </div>
 
-  <div class="bubble personal">
-    <h3>Personalized Care</h3>
-    <p>
-      No two individuals are the same. Treatment and assessment are carefully
-      tailored to meet your specific needs and goals.
-    </p>
-  </div>
+  <div class="bubble-row">
+    <div class="bubble help">
+      <h3>How We Help</h3>
+      <p>
+        We support children, adolescents, and adults navigating mental health,
+        learning, behavioral, and emotional concerns.
+      </p>
+    </div>
 
-  <div class="bubble help">
-    <h3>How We Help</h3>
-    <p>
-      We support children, adolescents, and adults with concerns related to
-      mental health, learning, behavior, and emotional regulation.
-    </p>
-  </div>
-
-  <div class="bubble guidance">
-    <h3>Next Steps</h3>
-    <p>
-      You’re invited to explore our services or reach out with questions.
-      We’re here to help guide you forward.
-    </p>
+    <div class="bubble guidance">
+      <h3>Next Steps</h3>
+      <p>
+        You’re welcome to explore our services or reach out with questions.
+        We’re here to help guide you forward — thoughtfully and collaboratively.
+      </p>
+    </div>
   </div>
 
 </section>
