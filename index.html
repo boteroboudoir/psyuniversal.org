@@ -46,16 +46,16 @@
       box-shadow: 0 10px 25px rgba(0,0,0,0.1);
       margin-top: 10px;
       overflow: hidden;
-      min-width: 260px; /* widened */
+      min-width: 260px;
     }
 
     .dropdown a {
       display: block;
-      padding: 14px 22px; /* more breathing room */
+      padding: 14px 22px;
       text-decoration: none;
       color: #1e293b;
       font-weight: 600;
-      font-size: 0.9rem; /* smaller text */
+      font-size: 0.9rem;
     }
 
     .dropdown a:hover {
@@ -72,6 +72,14 @@
     .hero {
       background: #9DC7F4;
       text-align: center;
+    }
+
+    .approach {
+      background: #F3F4FF;
+    }
+
+    .help {
+      background: #EAF7F3;
     }
   </style>
 </head>
@@ -103,12 +111,40 @@
   </p>
 </section>
 
+<section class="approach">
+  <h2>Our Approach</h2>
+  <p>
+    Universal Psychological Services provides compassionate, evidence-based
+    care tailored to the individual. We believe therapy should feel personal,
+    respectful, and empowering.
+  </p>
+  <p>
+    Our clinicians work collaboratively with clients, families, and institutions
+    to support emotional growth, clarity, and long-term well-being.
+  </p>
+</section>
+
+<section class="help">
+  <h2>How We Help</h2>
+  <p>
+    We support individuals across the lifespan with concerns related to mental
+    health, learning, behavior, and emotional regulation.
+  </p>
+  <p>
+    Detailed information about our services can be found in the Services section
+    of the menu above.
+  </p>
+</section>
+
 <script>
   function toggleMenu() {
     const menu = document.getElementById("dropdown");
     menu.style.display = menu.style.display === "block" ? "none" : "block";
   }
 </script>
+
+</body>
+</html>
 
 </body>
 </html>
