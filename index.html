@@ -69,24 +69,50 @@
       border-radius: 30px;
     }
 
-    .hero {
+    /* HERO GRID */
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-bubble {
       background: #9DC7F4;
+      border-radius: 30px;
+      padding: 3.5rem;
       text-align: center;
     }
 
-    .hero h2 {
+    .hero-bubble h2 {
       font-weight: 800;
       font-size: 2.6rem;
       margin-top: 0;
     }
 
-    /* BOLDER WELCOME TEXT */
-    .hero p {
+    .hero-bubble p {
       font-weight: 700;
       font-size: 1.15rem;
       line-height: 1.7;
       max-width: 800px;
       margin: 0.75rem auto;
+    }
+
+    .hero-bubble.secondary {
+      background: #EEF2FF;
+      text-align: left;
+    }
+
+    .hero-bubble.secondary h3 {
+      font-weight: 800;
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+
+    .hero-bubble.secondary p {
+      font-weight: 600;
+      font-size: 1.05rem;
+      line-height: 1.7;
     }
 
     .appointment {
@@ -133,7 +159,6 @@
       background: #8b7fe0;
     }
 
-    /* CENTERED, MEDICAL-STYLE FOOTER INFO */
     .footer-info {
       background: #EAF7F3;
       font-size: 1rem;
@@ -155,6 +180,16 @@
       color: #1e293b;
       font-weight: 700;
       text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-bubble.secondary {
+        text-align: center;
+      }
     }
 
     @media (max-width: 800px) {
@@ -191,13 +226,23 @@
   </nav>
 </header>
 
-<section class="hero">
-  <h2>Where You Matter.</h2>
-  <p><strong>Private – Professional – Personal</strong></p>
-  <p>
-    Welcome to Universal Psychological Services, where each client matters.
-    We value and provide unique therapeutic experiences for all.
-  </p>
+<section class="hero-grid">
+  <div class="hero-bubble">
+    <h2>Where You Matter.</h2>
+    <p><strong>Private – Professional – Personal</strong></p>
+    <p>
+      Welcome to Universal Psychological Services, where each client matters.
+      We value and provide unique therapeutic experiences for all.
+    </p>
+  </div>
+
+  <div class="hero-bubble secondary">
+    <h3>Finding What You Need</h3>
+    <p>
+      To view our services and additional details, please visit the
+      drop-down menu located at the top right corner of this page.
+    </p>
+  </div>
 </section>
 
 <section class="appointment">
